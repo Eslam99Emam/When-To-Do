@@ -142,7 +142,12 @@ class _SigninState extends State<Signin> {
                                 password: sign["password"],
                               );
                               auth.runtimeType == AuthResponse
-                                  ? Navigator.pop(context)
+                                  ? Navigator.pushReplacement(
+                                      context,
+                                      SlideBTTPageRouting(
+                                        MyHomePage(),
+                                      ),
+                                    )
                                   : AwesomeDialog(
                                       context: context,
                                       dialogType: DialogType.error,
