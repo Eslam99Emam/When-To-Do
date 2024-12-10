@@ -1,0 +1,10 @@
+# flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  name: "When To-Do"
+  ios: true
+  image_path: "assets/when_to-do.png"
+  remove_alpha_ios: true
+  min_sdk_android: 24 # android min sdk min:16, default 21
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/when_to-do.png"
